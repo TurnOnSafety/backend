@@ -1,25 +1,37 @@
 package com.turnon.safety.SafetyApi.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+
+
+@Table(name = "safety_users")
 @Entity // 테이블로 만들어줌
-public class User {
+@Getter
+@NoArgsConstructor      // 기본 생성자 자동 생성
+public class NewUser {
     @Id // 기본키로 사용할 변수
-    @GeneratedValue // 자동으로 값이 증가하도록 설정
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long user_id;
 
     @Column // 컬럼으로 사용할 변수
     private String name;
+    @Column
     private String company;
+    @Column
     private String role;
+    @Column
     private String team;
+    @Column
     private String position;
+    @Column
     private String phone;
 
-    public User(String name, String company, String role, String team, String position, String phone) {
+
+    public NewUser(Long user_id, String name, String company, String role, String team, String position, String phone) {
+        this.user_id = user_id;
         this.name = name;
         this.company = company;
         this.role = role;
@@ -28,13 +40,10 @@ public class User {
         this.phone = phone;
     }
 
-    public User() {
-
-    }
 
     @Override
     public String toString() {
-        return "ArticleForm{" +
+        return "from entity , NewUser{" +
                 "name='" + name +  '\'' +
                 ", company='" + company + '\'' +
                 ", role='" + role + '\'' +

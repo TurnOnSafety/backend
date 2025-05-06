@@ -2,15 +2,26 @@
 TurnOnSafety 의 backend를 담당하는 레포입니다.
 
 ## 개발방향
-- 스택
+- 작업자 개인 경력 관리
+- 관리자 Alert 상황 관리
+- 작업자 교육사항 관리
 
 ## 환경설정
 - Java 17 이상
 - Maven 3.8+ or Gradle? 아직 미정.
 - Spring Boot 3.x
-- MySQL 8.0 이상
+- MariaDB
+
+## 의존성
+- Lombok
+- Spring Web
+- Mustache
+- JDBC API
+- Spring Data JPA
+- MariaDB Driver
+- Cyclone SBOM support
   
-## Stack
+## 스택
 
 ### 기본폴더 설명
 

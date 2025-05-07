@@ -1,5 +1,5 @@
 # 🦺 산업 안전 관리 백엔드
-TurnOnSafety 의 backend를 담당하는 레포입니다.
+TurnOnSafety의 backend를 담당하는 레포입니다.
 
 ## 개발방향
 - 작업자 개인 경력 관리
@@ -8,9 +8,10 @@ TurnOnSafety 의 backend를 담당하는 레포입니다.
 
 ## 환경설정
 - Java 17 이상
-- Maven 3.8+ or Gradle? 아직 미정.
+- Gradle/groovy
 - Spring Boot 3.x
 - MariaDB
+- api 방식 : Restful api
 
 ## 의존성
 - Lombok

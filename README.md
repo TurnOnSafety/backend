@@ -30,5 +30,15 @@ void shouldReturnAllIncidentsWhenCalled() { ... }
 
 - 
 ### 커밋
+| Prefix      | 용도 예시                    |
+| ----------- | ------------------------ |
+| `feat:`     | 새로운 기능 추가                |
+| `fix:`      | 버그 수정                    |
+| `refactor:` | 리팩토링 (기능 변화 없이 구조 개선)    |
+| `chore:`    | 빌드, 의존성, 환경설정 등 잡일       |
+| `docs:`     | 문서 수정                    |
+| `test:`     | 테스트 코드 추가 또는 변경          |
+| `style:`    | 코드 포맷팅, 세미콜론 누락 등 비기능 변경 |
+
 ### 🧪 테스트
 Postman Collection: /docs/postman_collection.json
